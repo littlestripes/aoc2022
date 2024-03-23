@@ -2,7 +2,7 @@ pub fn main() {
     println!(
         "{}",
         include_str!("static/input")
-        // bring in the text file as a string
+        // include the text file as a string literal
             .split("\n\n")
             // split the literal into an iterator
             .map(|e| e.lines().map(|c| c.parse::<u32>().unwrap()).sum::<u32>())
